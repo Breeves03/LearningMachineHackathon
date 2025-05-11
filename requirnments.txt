@@ -5,3 +5,4 @@ seaborn
 scipy
 import plotly.express as px
 sklearn
+shap
