@@ -14,18 +14,25 @@ Before modeling, we performed data analysis to better understand the distributio
 ### 🎂 Age Distribution
 - The dataset primarily includes children under 10 years old.
 - A **histogram** in `AgeHistogram.ipynb` reveals that ages are skewed toward younger individuals, which aligns with early screening practices.
+![alt text](graph_pngs/AgeHistogram.png)
 
 ### 🧠 Age vs ASD Class
 - In `AgeVsClass_ASD.ipynb`, we observed that **ASD classification rates do not strongly correlate with age**, suggesting that age alone is not a predictive factor.
 - This emphasizes the need for multi-feature models over demographic-only baselines.
+![alt text](graph_pngs/AgeVsClass_ASD.png)
 
 ### 🧬 Gender, Jaundice, and Ethnicity Relationships
 - `GenderRelation.ipynb` and `JaundiceRelation.ipynb` highlight minor class imbalances but no strong individual predictors.
 - `EthnicityRelation.ipynb` shows a wide variety of ethnic backgrounds with **no single dominant group**, suggesting the model must generalize well across populations.
+![alt text](praph_pngs/ASD_By_Gender.png)
+![alt text](graph_pngs/JaundiceASD.png)
 
 ### 📈 Q1–Q10 Questionnaire Scores
 - `q1-q10HeatMap.ipynb` reveals **strong internal correlations** among several of the behavioral screening questions.
 - `q1-q10ImpactChart.ipynb` visualizes their importance in prediction — confirming that **certain items disproportionately influence the final ASD class**.
+![alt text](graph_pngs/QHeatmap.png)
+![alt text](grpah_pngs/QImpact.png)
+
 
 These insights helped guide both **feature selection** and **fairness auditing**, ensuring models weren't overly dependent on correlated or biased attributes.
 
