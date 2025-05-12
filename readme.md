@@ -24,7 +24,7 @@ Before modeling, we performed data analysis to better understand the distributio
 ### 🧬 Gender, Jaundice, and Ethnicity Relationships
 - `GenderRelation.ipynb` and `JaundiceRelation.ipynb` highlight minor class imbalances but no strong individual predictors.
 - `EthnicityRelation.ipynb` shows a wide variety of ethnic backgrounds with **no single dominant group**, suggesting the model must generalize well across populations.
-![alt text](praph_pngs/ASD_By_Gender.png)
+![alt text](graph_pngs/ASD_By_Gender.png)
 ![alt text](graph_pngs/JaundiceASD.png)
 
 ### 📈 Q1–Q10 Questionnaire Scores
@@ -103,14 +103,23 @@ This project addresses several ethical concerns in ML for health:
 
 ## ⚙️ Setup & Reproducibility
 
+Use the “setup.ipynb” notebook to install all required dependencies by opening it in Jupyter and running its cells. This ensures that libraries such as scikit-learn, pandas, and others listed in the “requirements.txt” file are properly set up.
+
+
+
 ### `requirements.txt`
 ```txt
-xgboost
-catboost
-scikit-learn
-imblearn
-optuna
-shap
-matplotlib
+fairlearn
+sklearn
 pandas
 numpy
+matplotlib
+seaborn
+IPython
+catboost
+imblearn
+optuna
+xgboost
+scipy
+collections
+shap
