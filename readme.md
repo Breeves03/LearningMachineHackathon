@@ -31,7 +31,7 @@ Before modeling, we performed data analysis to better understand the distributio
 - `q1-q10HeatMap.ipynb` reveals **strong internal correlations** among several of the behavioral screening questions.
 - `q1-q10ImpactChart.ipynb` visualizes their importance in prediction — confirming that **certain items disproportionately influence the final ASD class**.
 ![alt text](graph_pngs/QHeatmap.png)
-![alt text](grpah_pngs/QImpact.png)
+![alt text](graph_pngs/QImpact.png)
 
 
 These insights helped guide both **feature selection** and **fairness auditing**, ensuring models weren't overly dependent on correlated or biased attributes.
